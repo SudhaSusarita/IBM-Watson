@@ -155,11 +155,15 @@ public class WatsonLogic : MonoBehaviour
             Debug.Log("Intents:::" + intent);
 
             //Trigger the animation
-          //  MakeAMove(intent);
+            //  MakeAMove(intent);
+            animator.SetBool("Idle", true);
+            animator.SetBool("speak", false);
 
 
             //get Watson Output
             string outputText2 = response.Result.Output.Generic[0].Text;
+           
+
             Debug.Log("susa:::"+outputText2);
             w_response.text = outputText2;
 
@@ -185,6 +189,7 @@ public class WatsonLogic : MonoBehaviour
     private void CallTextToSpeech(string outputText)
     {
         Debug.Log("Sent to Watson Text To Speech: " + outputText);
+       
 
         byte[] synthesizeResponse = null;
         AudioClip clip = null;
@@ -215,6 +220,9 @@ public class WatsonLogic : MonoBehaviour
             source.volume = 1.0f;
             source.loop = false;
             source.clip = clip;
+            animator.SetBool("speak", true);
+            animator.SetBool("Idle", false);
+
             source.Play();
 
             Invoke("RecordAgain", source.clip.length);
