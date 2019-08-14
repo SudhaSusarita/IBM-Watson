@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1288680449}
+      - m_Target: {fileID: 28999790}
         m_MethodName: send
         m_Mode: 1
         m_Arguments:
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1288680449}
+      - m_Target: {fileID: 28999790}
         m_MethodName: chat
         m_Mode: 1
         m_Arguments:
@@ -1570,8 +1570,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1288680449}
-        m_MethodName: speak
+      - m_Target: {fileID: 28999790}
+        m_MethodName: send
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1675,6 +1675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elizabeth Warren rigged
       objectReference: {fileID: 0}
+    - target: {fileID: 100308, guid: cc3c26aad252b7f42a9e844aff96ef79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400308, guid: cc3c26aad252b7f42a9e844aff96ef79, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
@@ -1737,7 +1741,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6ffd0893bd39fad41bf26cad38f60bba, type: 2}
     - target: {fileID: 9500000, guid: cc3c26aad252b7f42a9e844aff96ef79, type: 3}
       propertyPath: m_UpdateMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc3c26aad252b7f42a9e844aff96ef79, type: 3}
