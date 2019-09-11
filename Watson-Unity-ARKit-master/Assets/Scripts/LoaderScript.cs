@@ -27,7 +27,6 @@ public class LoaderScript : MonoBehaviour
     }
     public void textInput() {
         Debug.Log("plays");
-        // Application.OpenURL("https://assistant-chat-eu-gb.watsonplatform.net/web/public/e91fd145-6292-47ff-b10c-b4f2af473345");
         chatApplication();
     }
 

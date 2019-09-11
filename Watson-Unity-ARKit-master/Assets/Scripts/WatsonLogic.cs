@@ -164,7 +164,6 @@ public class WatsonLogic : MonoBehaviour
             string outputText2 = response.Result.Output.Generic[0].Text;
            
 
-            Debug.Log("susa:::"+outputText2);
             w_response.text = outputText2;
 
             CallTextToSpeech(outputText2);
@@ -394,10 +393,5 @@ public class WatsonLogic : MonoBehaviour
         BuildSpokenRequest(chatQuery.text);
         chatQuery.text = "";
     }
-  /*  public void speak() {
-
-       // StartRecording();
-        chatInput.SetActive(false);
-
-    }*/
+  
 }
